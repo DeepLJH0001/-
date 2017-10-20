@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{e9dc2939-357a-4962-aaff-bf90ed02a572}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{eae4febc-38a6-481e-a349-5ee359a12e4d}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="class">
+      <UniqueIdentifier>{04ece4f8-80db-48ae-98a1-cbb5ed58e0b2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\fishjoy.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\main_ui_title_cn-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\ui_background_normal-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\UI_GameMenuText_cn-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\static_data.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\UI_GameMenuText_cn-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\FishActor-Large-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\FishActor-Marlin-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\FishActor-Marlin-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\FishActor-Mid-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\FishActor-Mid-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\FishActor-Small-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\FishActor-Small-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code04\Thumbs.db">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code06\cannon-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code06\cannon-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code06\Item-chaojiwuqi-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code06\Item-chaojiwuqi-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code06\Thumbs.db">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code07\Thumbs.db">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code07\ui_button_63-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Code07\ui_button_65-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\FishActor-Large-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\FishActor-Shark-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\FishActor-Shark-ipadhd.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fishjoy.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMenuLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Fish.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="CannonLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="FishLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Cannon.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="FishNet.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseMenu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMenuText.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="GoldCounterLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleCounterDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleCountDown.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonalAudioEngine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="FishJoyData.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressBar.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMenuLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticData.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroudLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="CannonLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="FishLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="Fish.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="Cannon.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="FishNet.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScene.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseMenu.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMenuText.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="Counter.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldCounterLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleCountDown.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonalAudioEngine.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="FishJoyData.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingLayer.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp">
+      <Filter>class</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

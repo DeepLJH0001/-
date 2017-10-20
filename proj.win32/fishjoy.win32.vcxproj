@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65030828-DFC4-48DB-B680-77031199B710}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\$(Configuration).win32\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\cocos2d\cocos2d-x-2.2.6\external\chipmunk\include\chipmunk;E:\cocos2d\cocos2d-x-2.2.6\extensions\GUI;E:\cocos2d\cocos2d-x-2.2.6\extensions\CocoStudio;E:\cocos2d\cocos2d-x-2.2.6\extensions\CCBReader;E:\cocos2d\cocos2d-x-2.2.6\extensions;.;..\Classes;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\include;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\kazmath\include;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\platform\win32;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\platform\third_party\win32;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\platform\third_party\win32\OGLES;E:\cocos2d\cocos2d-x-2.2.6\external;E:\cocos2d\cocos2d-x-2.2.6\CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;libExtensions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>fishjoy.h</HeaderFileName>
+      <InterfaceIdentifierFileName>fishjoy_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>fishjoy_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/fishjoy.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\cocos2d\cocos2d-x-2.2.6\CocosDenshion\include\;E:\cocos2d\cocos2d-x-2.2.6\external\;E:\cocos2d\cocos2d-x-2.2.6\extensions\;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\kazmath\include\;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\platform\win32\;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\platform\;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\;E:\cocos2d\cocos2d-x-2.2.6\cocos2dx\include\;.;..\Classes;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\cocos2dx;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\cocos2dx\include;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\cocos2dx\kazmath\include;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\cocos2dx\platform\win32;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\cocos2dx\platform\third_party\win32;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\cocos2dx\platform\third_party\win32\OGLES;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\external;E:\cocos2d\cocos2d-x-2.2.6\cocos2d-x-2.2.6\CocosDenshion\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libchipmunk.lib;libExtensions.lib</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>fishjoy.h</HeaderFileName>
+      <InterfaceIdentifierFileName>fishjoy_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>fishjoy_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/fishjoy.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Resources\CloseNormal.png" />
+    <None Include="..\Resources\CloseSelected.png" />
+    <None Include="..\Resources\Code04\FishActor-Large-ipadhd.plist" />
+    <None Include="..\Resources\Code04\FishActor-Marlin-ipadhd.plist" />
+    <None Include="..\Resources\Code04\FishActor-Marlin-ipadhd.png" />
+    <None Include="..\Resources\Code04\FishActor-Mid-ipadhd.plist" />
+    <None Include="..\Resources\Code04\FishActor-Mid-ipadhd.png" />
+    <None Include="..\Resources\Code04\FishActor-Small-ipadhd.plist" />
+    <None Include="..\Resources\Code04\FishActor-Small-ipadhd.png" />
+    <None Include="..\Resources\Code04\Thumbs.db" />
+    <None Include="..\Resources\Code06\cannon-ipadhd.plist" />
+    <None Include="..\Resources\Code06\cannon-ipadhd.png" />
+    <None Include="..\Resources\Code06\Item-chaojiwuqi-ipadhd.plist" />
+    <None Include="..\Resources\Code06\Item-chaojiwuqi-ipadhd.png" />
+    <None Include="..\Resources\Code06\Thumbs.db" />
+    <None Include="..\Resources\Code07\Thumbs.db" />
+    <None Include="..\Resources\Code07\ui_button_63-ipadhd.png" />
+    <None Include="..\Resources\Code07\ui_button_65-ipadhd.png" />
+    <None Include="..\Resources\FishActor-Large-ipadhd.png" />
+    <None Include="..\Resources\FishActor-Shark-ipadhd.plist" />
+    <None Include="..\Resources\FishActor-Shark-ipadhd.png" />
+    <None Include="..\Resources\HelloWorld.png" />
+    <None Include="..\Resources\static_data.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\Resources\UI_GameMenuText_cn-ipadhd.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="C:\Users\Administrator\Desktop\main_ui_title_cn-ipadhd.png" />
+    <None Include="C:\Users\Administrator\Desktop\ui_background_normal-ipadhd.png" />
+    <None Include="C:\Users\Administrator\Desktop\UI_GameMenuText_cn-ipadhd.png" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\fishjoy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fishjoy.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="BackgroundLayer.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Cannon.h" />
+    <ClInclude Include="CannonLayer.h" />
+    <ClInclude Include="Counter.h" />
+    <ClInclude Include="Fish.h" />
+    <ClInclude Include="FishJoyData.h" />
+    <ClInclude Include="FishLayer.h" />
+    <ClInclude Include="FishNet.h" />
+    <ClInclude Include="GameMenuLayer.h" />
+    <ClInclude Include="GameMenuText.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="GoldCounterLayer.h" />
+    <ClInclude Include="LoadingLayer.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="MenuScene.h" />
+    <ClInclude Include="PanelLayer.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="PersonalAudioEngine.h" />
+    <ClInclude Include="ProgressBar.h" />
+    <ClInclude Include="ProgressDelegate.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScheduleCountDown.h" />
+    <ClInclude Include="ScheduleCounterDelegate.h" />
+    <ClInclude Include="StaticData.h" />
+    <ClInclude Include="TouchLayer.h" />
+    <ClInclude Include="Weapon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="BackgroudLayer.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Cannon.cpp" />
+    <ClCompile Include="CannonLayer.cpp" />
+    <ClCompile Include="Counter.cpp" />
+    <ClCompile Include="FishJoyData.cpp" />
+    <ClCompile Include="GoldCounterLayer.cpp" />
+    <ClCompile Include="Fish.cpp" />
+    <ClCompile Include="FishLayer.cpp" />
+    <ClCompile Include="FishNet.cpp" />
+    <ClCompile Include="GameMenuLayer.cpp" />
+    <ClCompile Include="GameMenuText.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="LoadingLayer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MenuScene.cpp" />
+    <ClCompile Include="PanelLayer.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="PersonalAudioEngine.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
+    <ClCompile Include="ScheduleCountDown.cpp" />
+    <ClCompile Include="StaticData.cpp" />
+    <ClCompile Include="TouchLayer.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\cocos2d-x-2.2.6\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Cocos2d-x高级开发教程源代码\Cocos2d-x高级开发教程源代码\《实战演练》代码\Windows项目\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="H:\cocos2d-x-2.2.6\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
