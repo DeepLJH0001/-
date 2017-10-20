@@ -5,5 +5,5 @@
 - 可执行文件下载：https://pan.baidu.com/s/1jIR82OI
 - 实现了若干功能：贝塞尔曲线、粒子特效、碰撞检测等
 <br />
-![](https://github.com/DeepLJH0001/Intelligent_car/blob/master/image/%E6%97%A0%E6%A0%87%E9%A2%98.png?raw=true)
+- ![image](https://github.com/DeepLJH0001/catch_fish/blob/master/image/QQ%E6%88%AA%E5%9B%BE20171020230043.png?raw=true)
 <br />
